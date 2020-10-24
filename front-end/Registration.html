@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var interval = setInterval(function() {
+                var momentNow = moment();
+                $('#time-part').html(momentNow.format('HH:mm:ss'));
+            }, 100);
+        });
+    </script>
+</head>
+<body>
+
+    <div class='time-frame'>
+        <div id='time-part'></div>
+    </div>
+
+</body>
+</html>
